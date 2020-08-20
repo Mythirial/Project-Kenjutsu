@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: -5955612941434025007}
   - component: {fileID: 1277265494953513557}
   - component: {fileID: 4276574328375654987}
+  - component: {fileID: 7970611029604989039}
   - component: {fileID: 133022270}
   m_Layer: 8
   m_Name: Katana
@@ -129,7 +130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders: []
+  m_Colliders:
+  - {fileID: 7970611029604989039}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -201,8 +203,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 11.415087, y: 1.0479994, z: 0.30188215}
-  m_Center: {x: 0.3112531, y: -1.0388987, z: 0.011988395}
+  m_Size: {x: 7.543282, y: 0.67110735, z: 0.16104695}
+  m_Center: {x: -1.6246862, y: -1.0310929, z: 0.011886373}
 --- !u!65 &4276574328375654987
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -216,6 +218,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.44174942, y: 1.0479994, z: 0.867698}
   m_Center: {x: 2.352438, y: -1.0388987, z: -0.0016391277}
+--- !u!65 &7970611029604989039
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5954469579098385579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4329042, y: 0.7806441, z: 0.32737085}
+  m_Center: {x: 4.2836213, y: -0.90522105, z: 0.007813387}
 --- !u!54 &133022270
 Rigidbody:
   m_ObjectHideFlags: 0
