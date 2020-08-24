@@ -412,7 +412,7 @@ Transform:
   m_GameObject: {fileID: 1373304339384835797}
   m_LocalRotation: {x: 0.037740186, y: 0.9992876, z: 5.5119633e-17, w: 1.6300862e-16}
   m_LocalPosition: {x: 0.028992068, y: -0.0025938721, z: 1.22991095e-17}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8807435655268475174}
   - {fileID: 7815297423880089126}
@@ -1750,6 +1750,7 @@ GameObject:
   - component: {fileID: 3505910489928771477}
   - component: {fileID: 6280608841412602878}
   - component: {fileID: 3387193731271821553}
+  - component: {fileID: 1119201197}
   m_Layer: 0
   m_Name: Robot Kyle
   m_TagString: Untagged
@@ -1783,8 +1784,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8065419855962240176}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 320b1c2af77554f99a1658df4a6d3d5c, type: 3}
+  m_Controller: {fileID: 9100000, guid: 34426023399060f48819575ad92d34ca, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1893,7 +1894,7 @@ MonoBehaviour:
   head:
     vrTarget: {fileID: 0}
     rigTarget: {fileID: 339808592}
-    trackingPositionOffset: {x: 0, y: -0.06, z: -0.15}
+    trackingPositionOffset: {x: 0, y: -0.06, z: -0.2}
     trackingRotationOffset: {x: 180, y: 90, z: 90}
   leftHand:
     vrTarget: {fileID: 0}
@@ -1906,6 +1907,23 @@ MonoBehaviour:
     trackingPositionOffset: {x: 0.05, y: -0.02, z: -0.1}
     trackingRotationOffset: {x: 90, y: -90, z: 0}
   headConstraint: {fileID: 339808592}
+--- !u!114 &1119201197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8065419855962240176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cc700e68763cf4e8aea7fd6f6f9301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightFootPosWeight: 1
+  rightFootRotWeight: 1
+  leftFootPosWeight: 1
+  leftFootRotWeight: 1
+  footOffset: {x: 0, y: 0.1, z: 0}
 --- !u!1 &8164256144205292212
 GameObject:
   m_ObjectHideFlags: 0

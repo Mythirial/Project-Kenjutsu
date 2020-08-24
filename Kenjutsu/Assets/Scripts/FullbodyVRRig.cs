@@ -36,10 +36,10 @@ namespace Assets.Scripts
         }
 
         // Update is called once per frame
-        private void Update()
+        private void FixedUpdate()
         {
             transform.position = headConstraint.position + _headBodyOffset;
-            transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.up, Vector3.up).normalized, Time.deltaTime * turnSmoothness);
+            transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.up, Vector3.up).normalized, Time.fixedDeltaTime* turnSmoothness);
 
             head.Map();
             rightHand.Map();
